@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accords</title>
+<style>
+body{font-family:Arial;background:#111;color:white;text-align:center;padding:20px}
+h1{color:#ffcc00}
+button{padding:15px 20px;margin:8px;font-size:18px;border:none;border-radius:12px;background:#ffcc00;color:black;font-weight:bold}
+button:active{background:white}
+#resultat{margin-top:20px;font-size:22px;background:#222;padding:20px;border-radius:12px;min-height:80px}
+</style>
+</head>
+<body>
+<h1>🎸 Accords</h1>
+<p>Choisis un accord :</p>
+<button onclick="show('Do - C')">Do</button>
+<button onclick="show('Ré - D')">Ré</button>
+<button onclick="show('Mi - E')">Mi</button>
+<button onclick="show('Fa - F')">Fa</button>
+<button onclick="show('Sol - G')">Sol</button>
+<button onclick="show('La - A')">La</button>
+<button onclick="show('Si - B')">Si</button>
+<div id="resultat">Clique sur un accord pour voir les notes</div>
+<script>
+function show(accord){
+document.getElementById('resultat').innerHTML = "Accord : <b>"+accord+"</b><br><br>🎵 Continue de t'entraîner !";
+}
+</script>
+</body>
+</html>
